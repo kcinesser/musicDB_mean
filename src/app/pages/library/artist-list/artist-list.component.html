@@ -1,0 +1,12 @@
+<h1>Artists</h1>
+
+<app-library-nav></app-library-nav>
+
+<div class="flex flex-wrap items-center">
+  <div class="artist-card artist-card__wrapper" *ngFor="let artist of artists">
+    <div class="w-full h-full text-center artist-card__inner" [ngStyle]="{'background':'url(' + artist.image_url + ')'}">
+      <span class="artist-card__title">{{ artist.name }}</span>
+    </div>
+  </div>
+</div>
+

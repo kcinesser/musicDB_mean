@@ -29,8 +29,8 @@ app.use(
 app.use(bodyParser.json());
 
 // Routes
-app.use('/songs', songsRouter);
-app.use('/artists', artistsRouter);
+app.use('/api/songs', songsRouter);
+app.use('/api/artists', artistsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
